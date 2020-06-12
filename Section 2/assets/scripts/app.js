@@ -23,16 +23,16 @@ alert('Hello Joo');
   *  Shadowed Variables
   **/ 
 
-            let userName = 'Milos';
+            // let userName = 'Milos';
 
-            function greetUser(name){
-                let userName = name;
-                alert(userName)
-            }
+            // function greetUser(name){
+            //     let userName = name;
+            //     alert(userName)
+            // }
 
-            userName = 'Dragan';
-            console.log(userName);
-            greetUser('Miciki');
+            // userName = 'Dragan';
+            // console.log(userName);
+            // greetUser('Miciki');
 
     //   It indeed is not allowed on the same level/ in the same scope.
 
@@ -51,3 +51,30 @@ alert('Hello Joo');
   // It creates a new variable on a different scope - this variables does not overwrite or remove the global variable by the way - both co-exist.
 
   // When referring to userName inside of the greetUser function we now always refer to the local, shadowed variable. Only if no such local variable existed, JavaScript would fall back to the global variable.
+
+  /**
+   * 
+   *    Assigment - Function
+   */
+
+   /*
+        1)
+
+   */
+
+   function firstFunc(){
+       alert('Gidra');
+   }
+   function secundFunc(name){
+        alert(name);
+   }
+   function thirdFunc(a, b, c){
+        return (a + '+' + b + '+' + c);
+   }
+
+    //firstFunc();
+    secundFunc('Miciki');
+    let thirdFunc1 = thirdFunc('a','b','c');
+    alert(thirdFunc1);
+
+    task3Element.addEventListener('click', firstFunc);
