@@ -1,5 +1,5 @@
-{
-    // Use IntelliSense to learn about possible attributes.
+{ 
+// Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "url": "file:///C:/Users/milos.RETAIL/Downloads/courses%20IT/JavaScript/JS%20-%20Academind/JavaScript%20-%20The%20Complete%20Guide/Section%202/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
