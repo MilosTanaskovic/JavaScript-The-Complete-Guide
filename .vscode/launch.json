@@ -8,7 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/milos.RETAIL/Downloads/courses%20IT/JavaScript/JS%20-%20Academind/JavaScript%20-%20The%20Complete%20Guide/Section%202/index.html",
+            "url": "file:///C:/Users/milos.RETAIL/Downloads/courses%20IT/JavaScript/JS%20-%20Academind/JavaScript%20-%20The%20Complete%20Guide/Section%205/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

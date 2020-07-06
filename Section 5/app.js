@@ -41,9 +41,22 @@
 
 // Understanding 'Strict Mode' & writing good code
 
-    'use strict';
+    // 'use strict';
 
-    let userName = 'Milos';
-    var undefined = 5;
+    // let userName = 'Milos';
+    // var undefined = 5;
 
-    console.log(userName);
+    // console.log(userName);
+
+// Inside the JS Engine - How the code executes
+
+    function getName(){
+        return prompt('Your name: ', '');
+    }
+
+    function greet(){
+        const userName = getName();
+        console.log('Hello ' + userName);
+    }
+
+    greet();
