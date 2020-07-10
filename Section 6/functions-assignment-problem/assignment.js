@@ -29,3 +29,14 @@ const sayHello24 = (name) => {
 sayHello23('Hi', 'Miki');
 sayHello24('Gidra');
 
+// 3 Add a default argument to the function you created: A fallback value for the phrase if no value is provided.
+
+const sayHello31 = (name = 'Milos') => {
+  console.log(` Hi ${name}`);
+};
+
+sayHello31('Gidra');
+
+
+
+
