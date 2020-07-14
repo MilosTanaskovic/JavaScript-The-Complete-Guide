@@ -10,3 +10,8 @@ task1.style.color = 'white';
 
 task11.style.backgroundColor = 'silver';
 
+// Change the document title
+
+const task2 = document.head;
+task2.querySelector('title').textContent = 'Assignment - Solved!';
+
