@@ -15,3 +15,8 @@ task11.style.backgroundColor = 'silver';
 const task2 = document.head;
 task2.querySelector('title').textContent = 'Assignment - Solved!';
 
+// Select the h1 element on this page and change its
+// text to "Assignment - Solved!".
+
+const task3 = document.getElementsByTagName('h1');
+task3.textContent = 'Assignment - Solved!';
