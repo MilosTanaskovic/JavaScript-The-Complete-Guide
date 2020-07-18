@@ -1,3 +1,5 @@
+// dom app.js project
+
 const addMovieModal = document.getElementById('add-modal');
 // const addMovieModal = document.querySelector('#add-modal');
 // const addMovieModal = document.body.children[1];
@@ -158,3 +160,4 @@ startAddMovieButton.addEventListener('click', showMovieModal);
 backdrop.addEventListener('click', backdropClickHandler);
 cancelAddMovieButton.addEventListener('click', cancelAddMovieHandler);
 confirmAddMovieButton.addEventListener('click', addMovieHandler);
+
