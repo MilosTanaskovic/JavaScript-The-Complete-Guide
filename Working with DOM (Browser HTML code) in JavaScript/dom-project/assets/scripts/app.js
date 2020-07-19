@@ -1,4 +1,5 @@
-// dom app.js project
+// dom app.js project versio 1.10
+// 
 
 const addMovieModal = document.getElementById('add-modal');
 // const addMovieModal = document.querySelector('#add-modal');
