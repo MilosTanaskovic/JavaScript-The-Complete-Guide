@@ -11,3 +11,15 @@ const arraylistItems = Array.form('Hi!') // ['H', 'i', '!'];
 const listItems = document.querySelectorAll('li');
 
 const arraylistItems = Array.from(listItems);
+
+// storing data in array
+
+const hobbies = ['Cooking', 'Sports'];
+const personalData = [30, 'Max', {moreDetail: []}];
+
+const analyticData = [[1,1.2][2,2.3]];
+for(const data of analyticData){
+    for(const dataPoint of data){
+        console.log(dataPoint);
+    }
+}
