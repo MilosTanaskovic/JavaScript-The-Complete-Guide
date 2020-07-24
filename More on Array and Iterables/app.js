@@ -44,8 +44,12 @@ console.log(hobbies);
 // slice - copy values
 
 const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
+// slice()
 const storedResults = testResults.slice(); // we can add parameter in the slice(2) - select from 2 index
 
-testResults.push(5.91);
+// concat()
+const storedResults = testResults.concat(1,2); // [1,5.3,1.5,10.99,-5,10,1,2];
+
+testResults.push(5.91); // [1, 5.3, 1.5, 10.99, -5, 10, 5.91]
 
 console.log(storedResults, testResults);
