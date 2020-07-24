@@ -40,3 +40,12 @@ console.log(hobbies);
 
 const removedElements = hobbies.splice(-2, 1);
 console.log(hobbies);
+
+// slice - copy values
+
+const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
+const storedResults = testResults.slice(); // we can add parameter in the slice(2) - select from 2 index
+
+testResults.push(5.91);
+
+console.log(storedResults, testResults);
