@@ -53,3 +53,6 @@ const storedResults = testResults.concat(1,2); // [1,5.3,1.5,10.99,-5,10,1,2];
 testResults.push(5.91); // [1, 5.3, 1.5, 10.99, -5, 10, 5.91]
 
 console.log(storedResults, testResults);
+// indexOf(), lastIndexOf()
+console.log(testResults.indexOf(5.3)); // 1
+console.log(storedResults.lastIndexOf(1)); // 6
