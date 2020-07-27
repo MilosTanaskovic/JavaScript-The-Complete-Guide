@@ -67,16 +67,37 @@
 
 // console.log(manuel);
 
+/**
+ *  Alternative to for loops: the forEach() method
+ */
+
+// const prices = [10.99, 5.99, 3.99, 6.59];
+// const tax = 0.19;
+// const taxtAdjustedPrices = [];
+
+// // for(const price of prices){
+// //     taxtAdjustedPrices.push(price * (1+ tax));
+// // }
+
+// prices.forEach((price, idx, prices) => {
+//     const pricesObj = { index: idx, texAdjPrice: price * (1+ tax) };
+//     taxtAdjustedPrices.push(pricesObj);
+// });
+// console.log(taxtAdjustedPrices);
+
+/**
+ * Transforming Data with map()
+ */
+
 const prices = [10.99, 5.99, 3.99, 6.59];
-const tax = 0.19;
-const taxtAdjustedPrices = [];
+const tax = 0.18;
 
-// for(const price of prices){
-//     taxtAdjustedPrices.push(price * (1+ tax));
-// }
-
-prices.forEach((price, idx, prices) => {
-    const pricesObj = { index: idx, texAdjPrice: price * (1+ tax) };
-    taxtAdjustedPrices.push(pricesObj);
+const taxAdjustedPrices = prices.map((price, idx, prices) => {
+    const priceObj = {
+        index: idx,
+        taxAdjPrice: price* (1 + tax)
+    };
+    return priceObj;
 });
-console.log(taxtAdjustedPrices);
+
+console.log(prices, taxAdjustedPrices);
