@@ -124,3 +124,10 @@ const filteredArray = prices.filter((price, index, prices) => {
 });
 
 console.log(filteredArray);
+
+/**
+ *  Where Arrow function shine!
+ */
+const filteredArrayShine = prices.filter(p => p > 6);
+
+console.log(filteredArrayShine);
