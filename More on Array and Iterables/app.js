@@ -182,3 +182,19 @@ const joinData = dataJoin.join(' ');
 
 console.log(transformingDataString);
 console.log(joinData);
+
+/**
+ *  The Spread Operator (...)
+ */
+
+const name = ['Milos', 'tanskovic'];
+const dataPerson = [{name: 'Milos', age: 26}, {name: 'Miciki', age: 27 }];
+
+const copieName = [...name];
+const copieDataPerson = [...dataPerson];
+
+name.push(26);
+dataPerson.name = 'Miki';
+
+console.log(name, copieName);
+console.log(dataPerson, copieDataPerson);
