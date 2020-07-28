@@ -167,3 +167,18 @@ console.log(transformedArray);
 console.log(sumArray);
 console.log(sumArray1);
 console.log(sumArrayChaining);
+
+/**
+ *  Array and Strings - split() and join()
+ */
+
+const dataString = 'MilosTanaskovic;14;12';
+const dataJoin = ['Milos', 'Tanaskovic'];
+
+const transformingDataString = dataString.split(';');
+transformingDataString[1] = +transformingDataString[1];
+
+const joinData = dataJoin.join(' ');
+
+console.log(transformingDataString);
+console.log(joinData);
