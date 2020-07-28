@@ -149,3 +149,21 @@ const sumShortly = prices.reduce((prevValue, currValue) => prevValue + currValue
 
 console.log(sum);
 console.log(sumShortly);
+
+/**
+ *  Chaining Methods in JS map() and reduce()
+ */
+
+const originalArray = [{price: 1.2}, {price: 1.3}, {price: 1.4}];
+
+const transformedArray = originalArray.map((obj => obj.price));
+const sumArray = transformedArray.reduce((prevValue, currValue) => prevValue + currValue, 0);
+const sumArray1 = originalArray.reduce((prevValue, currValue ) => prevValue + currValue.price, 3);
+
+const sumArrayChaining = originalArray.map((obj => obj.price))
+.reduce((prevValue, currValue) => prevValue + currValue, 10);
+
+console.log(transformedArray);
+console.log(sumArray);
+console.log(sumArray1);
+console.log(sumArrayChaining);
