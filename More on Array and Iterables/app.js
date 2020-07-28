@@ -131,3 +131,21 @@ console.log(filteredArray);
 const filteredArrayShine = prices.filter(p => p > 6);
 
 console.log(filteredArrayShine);
+
+/**
+ *  The important reduce() Method
+ */
+// const sum = 0;
+
+// prices.forEach((price) => {
+//     sum += price;
+// })
+
+const sum = prices.reduce((prevValue, currValue, currIndex, prices) => {
+    return prevValue + currValue;
+}, 0);
+
+const sumShortly = prices.reduce((prevValue, currValue) => prevValue + currValue, 5);
+
+console.log(sum);
+console.log(sumShortly);
