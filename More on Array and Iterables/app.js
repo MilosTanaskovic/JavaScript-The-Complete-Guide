@@ -89,16 +89,16 @@
  * Transforming Data with map()
  */
 
-const prices = [10.99, 5.99, 3.99, 6.59];
-const tax = 0.18;
+// const prices = [10.99, 5.99, 3.99, 6.59];
+// const tax = 0.18;
 
-const taxAdjustedPrices = prices.map((price, idx, prices) => {
-    const priceObj = {
-        index: idx,
-        taxAdjPrice: price* (1 + tax)
-    };
-    return priceObj;
-});
+// const taxAdjustedPrices = prices.map((price, idx, prices) => {
+//     const priceObj = {
+//         index: idx,
+//         taxAdjPrice: price* (1 + tax)
+//     };
+//     return priceObj;
+// });
 
 //console.log(prices, taxAdjustedPrices);
 
@@ -106,31 +106,31 @@ const taxAdjustedPrices = prices.map((price, idx, prices) => {
  *  sort() ing and reverse() ing 
  */
 
-const sortedPrices = prices.sort((a,b) => {
-    if(a > b) return 1;
-    else if(a === b) return 0;
-    else return -1;
-});
+// const sortedPrices = prices.sort((a,b) => {
+//     if(a > b) return 1;
+//     else if(a === b) return 0;
+//     else return -1;
+// });
 
-console.log(sortedPrices);
-console.log(sortedPrices.reverse());
+// console.log(sortedPrices);
+// console.log(sortedPrices.reverse());
 
 /**
  *  Filtering Array with filter()
  */
 
-const filteredArray = prices.filter((price, index, prices) => {
-    return price > 6;
-});
+// const filteredArray = prices.filter((price, index, prices) => {
+//     return price > 6;
+// });
 
-console.log(filteredArray);
+// console.log(filteredArray);
 
 /**
  *  Where Arrow function shine!
  */
-const filteredArrayShine = prices.filter(p => p > 6);
+// const filteredArrayShine = prices.filter(p => p > 6);
 
-console.log(filteredArrayShine);
+// console.log(filteredArrayShine);
 
 /**
  *  The important reduce() Method
@@ -141,60 +141,73 @@ console.log(filteredArrayShine);
 //     sum += price;
 // })
 
-const sum = prices.reduce((prevValue, currValue, currIndex, prices) => {
-    return prevValue + currValue;
-}, 0);
+// const sum = prices.reduce((prevValue, currValue, currIndex, prices) => {
+//     return prevValue + currValue;
+// }, 0);
 
-const sumShortly = prices.reduce((prevValue, currValue) => prevValue + currValue, 5);
+// const sumShortly = prices.reduce((prevValue, currValue) => prevValue + currValue, 5);
 
-console.log(sum);
-console.log(sumShortly);
+// console.log(sum);
+// console.log(sumShortly);
 
 /**
  *  Chaining Methods in JS map() and reduce()
  */
 
-const originalArray = [{price: 1.2}, {price: 1.3}, {price: 1.4}];
+// const originalArray = [{price: 1.2}, {price: 1.3}, {price: 1.4}];
 
-const transformedArray = originalArray.map((obj => obj.price));
-const sumArray = transformedArray.reduce((prevValue, currValue) => prevValue + currValue, 0);
-const sumArray1 = originalArray.reduce((prevValue, currValue ) => prevValue + currValue.price, 3);
+// const transformedArray = originalArray.map((obj => obj.price));
+// const sumArray = transformedArray.reduce((prevValue, currValue) => prevValue + currValue, 0);
+// const sumArray1 = originalArray.reduce((prevValue, currValue ) => prevValue + currValue.price, 3);
 
-const sumArrayChaining = originalArray.map((obj => obj.price))
-.reduce((prevValue, currValue) => prevValue + currValue, 10);
+// const sumArrayChaining = originalArray.map((obj => obj.price))
+// .reduce((prevValue, currValue) => prevValue + currValue, 10);
 
-console.log(transformedArray);
-console.log(sumArray);
-console.log(sumArray1);
-console.log(sumArrayChaining);
+// console.log(transformedArray);
+// console.log(sumArray);
+// console.log(sumArray1);
+// console.log(sumArrayChaining);
 
-/**
- *  Array and Strings - split() and join()
- */
+// /**
+//  *  Array and Strings - split() and join()
+//  */
 
-const dataString = 'MilosTanaskovic;14;12';
-const dataJoin = ['Milos', 'Tanaskovic'];
+// const dataString = 'MilosTanaskovic;14;12';
+// const dataJoin = ['Milos', 'Tanaskovic'];
 
-const transformingDataString = dataString.split(';');
-transformingDataString[1] = +transformingDataString[1];
+// const transformingDataString = dataString.split(';');
+// transformingDataString[1] = +transformingDataString[1];
 
-const joinData = dataJoin.join(' ');
+// const joinData = dataJoin.join(' ');
 
-console.log(transformingDataString);
-console.log(joinData);
+// console.log(transformingDataString);
+// console.log(joinData);
 
 /**
  *  The Spread Operator (...)
  */
 
-const name = ['Milos', 'tanskovic'];
-const dataPerson = [{name: 'Milos', age: 26}, {name: 'Miciki', age: 27 }];
+// const name = ['Milos', 'tanskovic'];
+// const dataPerson = [{name: 'Milos', age: 26}, {name: 'Miciki', age: 27 }];
 
-const copieName = [...name];
-const copieDataPerson = [...dataPerson];
+// const copieName = [...name];
+// const copieDataPerson = [...dataPerson];
 
-name.push(26);
-dataPerson.name = 'Miki';
+// name.push(26);
+// dataPerson.name = 'Miki';
 
-console.log(name, copieName);
-console.log(dataPerson, copieDataPerson);
+// console.log(name, copieName);
+// console.log(dataPerson, copieDataPerson);
+
+/**
+*   Array Destructuring
+ */
+
+const nameDate = ['Milos', 'Tanaskovic', 30, 'dsdsf'];
+
+// const firstName = nameDate[0]; // Milos
+// const lastName = nameDate[1]; // Tanaskovic
+
+const [firstName, lastName, ...otherInformation] = nameDate;
+
+console.log(firstName, lastName, otherInformation);
