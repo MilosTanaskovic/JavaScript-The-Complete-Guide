@@ -6,3 +6,6 @@ console.log(numGreater5);
 
 const mappedNumber = number.map(val => ({num: val}));
 console.log(mappedNumber);
+
+const multiplication = number.reduce((curResult, curValue) => curResult * curValue , 1);
+console.log(multiplication);
