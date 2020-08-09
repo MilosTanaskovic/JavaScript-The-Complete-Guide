@@ -7,4 +7,10 @@ const person = {
     }
 };
 
+// Adding, Modifying, & Deleting Properties
+//person.age = 31;
+delete person.age;
+person.isAdmin = true;
+
+console.log(person);
 person.greet();
